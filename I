@@ -1,0 +1,33 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #I
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/326175/I 
+* */
+
+1. #include <bits/stdc++.h>
+2. using namespace std;
+3.  
+4. int main() {
+5.    int N;
+6.    cin >> N;
+7.  
+8.    int tens = N / 10;   // First digit
+9.    int ones = N % 10;   // Second digit
+10.  
+11.    if (ones != 0 && tens % ones == 0) {
+12.        cout << "YES" << endl;
+13.    }
+14.    else if (tens != 0 && ones % tens == 0) {
+15.        cout << "YES" << endl;
+16.    }
+17.    else {
+18.        cout << "NO" << endl;
+19.    }
+20.  
+21.    return 0;
+22. }
