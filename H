@@ -1,0 +1,63 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #H
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/326175/H 
+* */
+
+1. #include <bits/stdc++.h>
+2. using namespace std;
+3.  
+4. // Function to safely check if a * b overflows long long
+5. bool willMultiplyOverflowLL(long long a, long long b) {
+6.    if (a == 0 || b == 0) return false;
+7.    if (a > LLONG_MAX / b) return true;
+8.    return false;
+9. }
+10.  
+11. // Function to calculate k^a safely
+12. long long powerCheck(long long k, long long a, bool &overflow) {
+13.    long long result = 1;
+14.    for (long long i = 0; i < a; i++) {
+15.        if (willMultiplyOverflowLL(result, k)) {
+16.            overflow = true;
+ 
+
+17.            return 0;
+18.        }
+19.        result *= k;
+20.    }
+21.    return result;
+22. }
+23.  
+24. int main() {
+25.    long long n, k, a;
+26.    cin >> n >> k >> a;
+27.  
+28.    bool overflow = false;
+29.    long long powResult = powerCheck(k, a, overflow);
+30.  
+31.    if (overflow) {
+32.        cout << "double" << endl;
+33.        return 0;
+34.    }
+35.  
+36.    if (willMultiplyOverflowLL(n, powResult)) {
+37.        cout << "double" << endl;
+38.        return 0;
+39.    }
+40.  
+41.    long long finalResult = n * powResult;
+42.  
+43.    if (finalResult >= INT_MIN && finalResult <= INT_MAX) {
+44.        cout << "int" << endl;
+45.    } else {
+46.        cout << "long long" << endl;
+47.    }
+48.  
+49.    return 0;
+50. }
