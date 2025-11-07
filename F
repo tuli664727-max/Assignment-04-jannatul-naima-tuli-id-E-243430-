@@ -1,0 +1,21 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #F
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/326175/ F 
+* */
+
+1. #include <iostream>
+2. using namespace std;
+3.  
+4. int main() {
+5.    unsigned int A, B;
+6.    cin >> A >> B;
+7.  
+8.    cout << (A ^ B);   // XOR performs addition without carry
+9.    return 0;
+10. }
