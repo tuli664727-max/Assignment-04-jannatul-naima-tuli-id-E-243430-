@@ -1,0 +1,31 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #2B
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/219432/2B 
+* */
+
+1. #include <bits/stdc++.h>
+2. using namespace std;
+3.  
+4. int main() {
+5.    int N;
+6.    cin >> N;
+7.  
+8.    bool hasEven = false;
+9.  
+10.    for (int i = 2; i <= N; i += 2) { // Start from 2 and step by 2
+11.        cout << i << endl;
+12.        hasEven = true;
+13.    }
+14.  
+15.    if (!hasEven) {
+16.        cout << -1 << endl;
+17.    }
+18.  
+19.    return 0;
+20. }
