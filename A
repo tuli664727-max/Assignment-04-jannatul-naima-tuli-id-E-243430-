@@ -1,0 +1,25 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #>
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/326175 /A 
+ */
+
+1. #include <iostream>
+2. #include <iomanip>
+3. using namespace std;
+4.  
+5. int main() {
+6.    double X, P;
+7.    cin >> X >> P;
+8.  
+9.    double originalPrice = P / (1 - X / 100.0);
+10.  
+11.    cout << fixed << setprecision(2) << originalPrice << endl;
+12.  
+13.    return 0;
+14. }
