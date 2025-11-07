@@ -19,7 +19,7 @@
 | H       | Data Type Guessing   | H_DataTypeGuessing.cpp   | ☐ |
 | I       | Lucky Numbers        | I_LuckyNumbers.cpp       | ☐ |
 
-# C++ Problem Set Contest # 2
+# C++ Problem Set sheet#2(A-c)
 
 **Name:** Jannatul Naima Tuli  
 **ID:** E243430  
