@@ -1,0 +1,22 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #D
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/326175/D 
+* */
+
+1. (a + b) + c
+2. (a + b) - c
+3. (a + b) * c
+4.  
+5. (a - b) + c
+6. (a - b) - c
+7. (a - b) * c
+8.  
+9. (a * b) + c
+10. (a * b) - c
+11. (a * b) * c
