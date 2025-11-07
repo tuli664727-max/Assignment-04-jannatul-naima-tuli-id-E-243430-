@@ -1,0 +1,46 @@
+* Course: Competitive Programming Sessional (CCE-2310)
+**Assignment no 4
+Code from *codeforce* contest #1
+⁠* Problem ID: #2C
+* Author: Jannatul Naima Tuli (ID:E243430)
+* Language/Version: GNU G++17 7.3.0
+* codeforce Profile: https://codeforces.com/profile/Tuli123
+* ⁠Date :07-11-2025
+* ⁠statement :https://codeforces.com/group/MWSDmqGsZm/contest/219432/2C 
+* */
+
+1. #include <bits/stdc++.h>
+2. using namespace std;
+3.  
+4. int main() {
+5.    int N;
+6.    cin >> N;
+7.  
+8.    int evenCount = 0, oddCount = 0, positiveCount = 0, negativeCount = 0;
+9.  
+10.    for (int i = 0; i < N; i++) {
+11.        int x;
+12.        cin >> x;
+13.  
+14.        // Check even or odd
+15.        if (x % 2 == 0) {
+16.            evenCount++;
+17.        } else {
+18.            oddCount++;
+19.        }
+20.  
+21.        // Check positive or negative
+22.        if (x > 0) {
+23.            positiveCount++;
+24.        } else if (x < 0) {
+25.            negativeCount++;
+26.        }
+27.    }
+28.  
+29.    cout << "Even: " << evenCount << endl;
+30.    cout << "Odd: " << oddCount << endl;
+31.    cout << "Positive: " << positiveCount << endl;
+32.    cout << "Negative: " << negativeCount << endl;
+33.  
+34.    return 0;
+35. }
